@@ -1,0 +1,59 @@
+<!doctype html
+html.no-js lang="en-US" 
+  include partials/_head
+  body
+    include partials/_sidebar
+    
+    / Main section (basic parralax and animation for shits and giggles)
+    section.section-hero
+      #particles-js data-0="top: 0;opacity: 1" data-top-bottom="top: -200%;opacity: 0"
+      .inner data-0="opacity: 1;transform: translate(-50%, -50%);" data-top-bottom="opacity: 0;transform: translate(-50%, -80%);"
+        h1 Your Open Source Documentation Authoring & Publishing Tool
+        p.lead 
+          | Write better content faster with 
+          span Brunswick
+          | , an open source software documentation platform.
+        .cta
+          a.btn.btn-p1 title="Start Contributing" href="#" Start Contributing
+          a.btn.btn-p2.is-pointing title="View Documentation" href="#" View Docs
+    
+    / It's time to be descriptive
+    section.section-1
+      .inner
+        h1 What is Brunswick?
+        p.lead
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id eros congue, vulputate turpis vitae, varius eros. 
+        p
+          | Ut faucibus arcu pharetra ipsum blandit, et varius urna feugiat. Vivamus viverra, ipsum in maximus rhoncus, velit urna lobortis lacus, a luctus neque justo eu nibh. Nam vehicula semper interdum. Curabitur consequat libero in hendrerit elementum. Aliquam erat volutpat.
+        p 
+          | Curabitur posuere aliquam tellus, sit amet commodo tellus lacinia in. Vivamus ultrices, sapien quis sollicitudin condimentum, neque nulla varius elit, vel malesuada magna odio consectetur purus. Suspendisse potenti.
+    
+    / Describing the tech with some language/service iconography
+    section.section-2
+      .inner
+        h1 Our Stack
+        p.lead
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id eros congue, vulputate turpis vitae, varius eros. 
+        p
+          | Ut faucibus arcu pharetra ipsum blandit, et varius urna feugiat. Vivamus viverra, ipsum in maximus rhoncus, velit urna lobortis lacus, a luctus neque justo eu nibh. Nam vehicula semper interdum. Curabitur consequat libero in hendrerit elementum. Aliquam erat volutpat.
+        p 
+          | Curabitur posuere aliquam tellus, sit amet commodo tellus lacinia in. Vivamus ultrices, sapien quis sollicitudin condimentum, neque nulla varius elit, vel malesuada magna odio consectetur purus. Suspendisse potenti.
+    
+    / Final CTA for contributions or to view the Docs
+    section.section-cta
+      .inner
+        h1 So what are you waiting for?
+        p.lead 
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id eros congue, vulputate turpis vitae, varius eros. 
+        .cta
+          a.btn.btn-p1 title="Start Contributing" href="#" Start Contributing
+          a.btn.btn-p2.is-pointing title="View Documentation" href="#" View Docs
+          
+    include partials/_footer
+  
+    / Scripts
+    script src="../js/particles.min.js"
+    script src="../js/app.js"
+    script src="../js/skrollr.min.js"
+    javascript:
+      skrollr.init({forceHeight: false});

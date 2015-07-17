@@ -1,0 +1,27 @@
+.btn
+  display: inline-block
+  text-transform: uppercase
+  letter-spacing: 1px
+  padding: 2rem 4rem 2.2rem
+  font-size: 1.8rem
+  line-height: 1
+  +border-radius(4rem)
+  &.is-pointing:after
+    content: "\2192"
+    display: inline-block
+    font-weight: 300
+    margin: 0 0 0 0.5rem
+.btn-p1
+  color: $c-green
+  background: #fff
+  font-weight: 600
+  +transition(background 0.1s ease-in-out)
+  &:hover
+    background: #E7FFBC
+.btn-p2
+  border: 2px solid #fff
+  color: #fff
+  +transition(background 0.1s ease-in-out, color 0.1s ease-in-out)
+  &:hover
+    background: #fff
+    color: $c-green
