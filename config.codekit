@@ -335,6 +335,48 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"railsCompatible": 0
+		},
+	"\/views\/svg\/_i-docs.slim": {
+		"compileOnly": 0,
+		"fileType": 1024,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/views\/svg\/_i-docs.slim",
+		"logicless": 0,
+		"outputAbbreviatedPath": "\/views\/svg\/_i-docs.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"railsCompatible": 0
+		},
+	"\/views\/svg\/_i-github.slim": {
+		"compileOnly": 0,
+		"fileType": 1024,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/views\/svg\/_i-github.slim",
+		"logicless": 0,
+		"outputAbbreviatedPath": "\/views\/svg\/_i-github.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"railsCompatible": 0
+		},
+	"\/views\/svg\/_i-hugo.slim": {
+		"compileOnly": 0,
+		"fileType": 1024,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/views\/svg\/_i-hugo.slim",
+		"logicless": 0,
+		"outputAbbreviatedPath": "\/views\/svg\/_i-hugo.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"railsCompatible": 0
 		}
 	},
 "hooks": [
