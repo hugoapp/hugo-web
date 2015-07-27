@@ -1,10 +1,10 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
 AuthName "Restricted Area" 
 AuthType Basic 
 AuthUserFile /var/www/.htpasswd 
 AuthGroupFile /dev/null 
 require valid-user
-
-RewriteEngine On
-RewriteBase /
-RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
