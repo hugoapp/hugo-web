@@ -2,19 +2,20 @@ doctype html
 html.no-js lang="en-US" 
   include partials/_head
   body.page-home
-    include partials/_sidebar
-    / Main section (basic parralax and animation for shits and giggles)
-    #particles-js data-0="background-color:rgb(207,75,75);" data-top-bottom="background-color:rgb(206,58,35);"
-    section.section-hero
-      .inner
-        h1 Let's write some docs together
-        p.lead 
-          span Hugo 
-          | is an open source documentation platform, so let's document our journey together.
-        .cta
-          a.btn.btn-p1.is-pointing-left title="Start Contributing" href="/" Back
-          a#send-email.btn.btn-p2 title="Send us an email" href="#email-modal" Send us an email
-    include partials/_modal-email
+    #skrollr-body
+      include partials/_sidebar
+      / Main section (basic parralax and animation for shits and giggles)
+      #particles-js data-0="background-color:rgb(207,75,75);" data-top-bottom="background-color:rgb(206,58,35);"
+      section.section-hero
+        .inner
+          h1 Let's write some docs together
+          p.lead 
+            span Hugo 
+            | is an open source documentation platform, so let's document our journey together.
+          .cta
+            a.btn.btn-p1.is-pointing-left title="Start Contributing" href="/" Back
+            a#send-email.btn.btn-p2 title="Send us an email" href="#email-modal" Send us an email
+      include partials/_modal-email
     / Scripts
     script src="/bower_components/jquery/dist/jquery.min.js"
     script src="/assets/js/particles.min.js"

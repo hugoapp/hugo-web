@@ -1,49 +1,46 @@
 section
-  height: 100vh
   position: relative
   z-index: 6
-.section-hero
   color: #fff
+  p
+    color: rgba(255, 255, 255, 0.9)
+  @media #{$section-min}
+    height: 100vh
+.section-hero
   position: relative
+  padding: 10rem 0 5rem
+  @media #{$section-min}
+    padding: 0
   .inner
     z-index: 7
     opacity: 1
+  .btn-p2
+    display: none
+    @media #{$section-min}
+      display: inline-block
   h1
-    font-size: 6.5rem
+    @media #{$section-min}
+      font-size: 6.5rem
   .lead
     color: rgba(255, 255, 255, 0.9)
     margin: 2rem 0 4rem
     span
       color: #fff
   .btn:first-of-type
-    margin: 0 2rem 0 0
+    @media #{$section-min}
+      margin: 0 2rem 0 0
   .cover
     position: absolute
     top: 0
     left: 0
     width: 100%
     height: 100%
-.section-1
-  // background: #43CB95
-  color: #fff
-  p
-    color: rgba(255, 255, 255, 0.9)
-
-.section-2
-  // background: #8F36B7
-  color: #fff
-  p
-    color: rgba(255, 255, 255, 0.9)
-
-.section-3
-  // background: #BE2A31
-  color: #fff
-  p
-    color: rgba(255, 255, 255, 0.9)
-
 .section-cta
-  height: 90vh
   background: #fff
+  p, h1
+    color: #000
+  @media #{$section-min}
+    height: 90vh
   .btn-p1
     color: #fff
     background: #000
@@ -56,4 +53,6 @@ section
       background: #000
       color: #fff
   .btn:first-of-type
-    margin: 0 2rem 0 0
+    margin: 0 0 2rem 0
+    @media #{$section-min}
+      margin: 0 2rem 0 0

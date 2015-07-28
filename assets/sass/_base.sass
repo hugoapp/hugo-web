@@ -6,6 +6,9 @@ body
   font-weight: 400
   height: 100%
   font-size: 1.2rem
+  background: $c-red
+  @media #{$section-min}
+    background: none
 a
   text-decoration: none
   cursor: pointer
@@ -14,31 +17,45 @@ a
 h1
   font-family: $f-source
   font-weight: 800
-  line-height: 1.25
+  
   max-width: 120rem
-  font-size: 6.2rem
+  font-size: 4.2rem
+  line-height: 1
+  @media #{$section-min}
+    font-size: 6.2rem
+    line-height: 1.2
+    
 p
   font-weight: 300
   line-height: 1.4
   max-width: 80rem
-  font-size: 2rem
+  font-size: 1.8rem
   margin: 0 0 2rem 0
+  @media #{$section-min}
+    font-size: 2rem
 
 // Additions
 .lead
-  font-size: 2.8rem
-  margin: 1rem 0 3rem
+  font-size: 2rem
+  margin: 1rem 0 2rem
   span
     font-weight: 400
+  @media #{$section-min}
+    margin: 1rem 0 3rem
+    font-size: 2.8rem
+  
 .inner
-  padding: 0 15rem
+  padding: 2rem
   max-width: 130rem
   margin: 0 auto
-  width: 100%
-  position: absolute
-  top: 50%
-  left: 50%
-  +transform(translate(-50%, -50%))
+  
+  @media #{$section-min}
+    padding: 0 15rem
+    width: 100%
+    position: absolute
+    top: 50%
+    left: 50%
+    +transform(translate(-50%, -50%))
 // Inputs 
 input
   font-weight: 400
