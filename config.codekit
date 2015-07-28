@@ -1406,6 +1406,20 @@
 		"outputStyle": 1,
 		"railsCompatible": 0
 		},
+	"\/views\/svg\/_i-close.slim": {
+		"compileOnly": 0,
+		"fileType": 1024,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/views\/svg\/_i-close.slim",
+		"logicless": 0,
+		"outputAbbreviatedPath": "\/views\/svg\/_i-close.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"railsCompatible": 0
+		},
 	"\/views\/svg\/_i-docs.slim": {
 		"compileOnly": 0,
 		"fileType": 1024,
