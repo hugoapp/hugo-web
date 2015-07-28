@@ -4,24 +4,16 @@ html.no-js lang="en-US"
   body.page-home
     include partials/_sidebar
     / Main section (basic parralax and animation for shits and giggles)
+    #particles-js data-0="background-color:rgb(207,75,75);" data-top-bottom="background-color:rgb(206,58,35);"
     section.section-hero
-      #particles-js data-0="top: 0;opacity: 1" data-top-bottom="top: -200%;opacity: 0"
-      .inner data-0="opacity: 1;transform: translate(-50%, -50%);" data-top-bottom="opacity: 0;transform: translate(-50%, -80%);"
+      .inner
         h1 Let's write some docs together
         p.lead 
           span Hugo 
           | is an open source documentation platform, so let's document our journey together.
         .cta
-          a.btn.btn-p1 title="Start Contributing" href="https://github.com/hugoapp" rel="nofollow" target="_blank" Start Contributing
-    section.section-cta
-      .inner
-        h1 Helping Hugo?
-        p.lead 
-          | We're a work in progress, so let's get started. Drop us a line to help, or jump right in and fork that repo.
-        .cta
-          a.btn.btn-p1 title="Start Contributing" href="#" Send us an email
-          a.btn.btn-p2.is-pointing title="View Documentation" href="#" Hugo on Github
-    include partials/_footer
+          a.btn.btn-p1 title="Start Contributing" href="/" Back
+          a.btn.btn-p2 title="Send us an email" href="#" Send us an email
     / Scripts
     script src="/assets/js/particles.min.js"
     script src="/assets/js/app.js"
