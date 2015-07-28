@@ -3,7 +3,10 @@
     include svg/_i-close
   h1 Send us an email
   p Believe it or not, we're real people out to make documentation awesome. Shoot us an email, whenever.
-  form
-    input.input.input-email#email-address type="email" placeholder="Email Address"
-    textarea.input.input-textarea rows="10" cols="4" placeholder="Message"
+  form method="post" action="//formspree.io/team@corilla.co"
+    input type="hidden" name="_next" value="http://writewithhugo.com/"
+    input type="hidden" name="_subject" value="Hugo Contact"
+    input type="text" name="_gotcha" style="display:none"
+    input.input.input-email#email-address type="email" name="_replyto" placeholder="Email Address"
+    textarea.input.input-textarea rows="10" cols="4" name="message" placeholder="Message"
     input.input.input-submit type="submit" value="Send"
