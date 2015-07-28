@@ -1,0 +1,32 @@
+doctype html
+html.no-js lang="en-US" 
+  include partials/_head
+  body.page-home
+    include partials/_sidebar
+    / Main section (basic parralax and animation for shits and giggles)
+    section.section-hero
+      #particles-js data-0="top: 0;opacity: 1" data-top-bottom="top: -200%;opacity: 0"
+      .inner data-0="opacity: 1;transform: translate(-50%, -50%);" data-top-bottom="opacity: 0;transform: translate(-50%, -80%);"
+        h1 Your documentation helper is here. Meet Hugo.
+        p.lead 
+          | Write better content faster with 
+          span Hugo
+          | , an open source documentation platform.
+        .cta
+          a.btn.btn-p1 title="Start Contributing" href="#" Start Contributing
+          a.btn.btn-p2.is-pointing title="View Documentation" href="#" View Docs
+    section.section-cta
+      .inner
+        h1 Helping Hugo?
+        p.lead 
+          | We're a work in progress, so let's get started. Drop us a line to help, or jump right in and fork that repo.
+        .cta
+          a.btn.btn-p1 title="Start Contributing" href="#" Send us an email
+          a.btn.btn-p2.is-pointing title="View Documentation" href="#" Hugo on Github
+    include partials/_footer
+    / Scripts
+    script src="/assets/js/particles.min.js"
+    script src="/assets/js/app.js"
+    script src="/assets/js/skrollr.min.js"
+    javascript:
+      skrollr.init({forceHeight: false});

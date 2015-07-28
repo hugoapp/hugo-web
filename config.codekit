@@ -239,6 +239,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/docs.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/docs.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/favicon.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -301,6 +310,20 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/views\/docs.slim": {
+		"compileOnly": 0,
+		"fileType": 1024,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/views\/docs.slim",
+		"logicless": 0,
+		"outputAbbreviatedPath": "\/docs.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 1,
+		"railsCompatible": 0
 		},
 	"\/views\/index.slim": {
 		"compileOnly": 0,

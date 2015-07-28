@@ -1,55 +1,50 @@
 doctype html
 html.no-js lang="en-US" 
   include partials/_head
-  body
+  body.page-home
     include partials/_sidebar
     / Main section (basic parralax and animation for shits and giggles)
     section.section-hero
       #particles-js data-0="top: 0;opacity: 1" data-top-bottom="top: -200%;opacity: 0"
       .inner data-0="opacity: 1;transform: translate(-50%, -50%);" data-top-bottom="opacity: 0;transform: translate(-50%, -80%);"
-        h1 Your Open Source Documentation Authoring &amp; Publishing Tool
+        h1 Your documentation helper is here. Meet Hugo.
         p.lead 
           | Write better content faster with 
           span Hugo
-          | , an open source software documentation platform.
+          | , an open source documentation platform.
         .cta
           a.btn.btn-p1 title="Start Contributing" href="#" Start Contributing
           a.btn.btn-p2.is-pointing title="View Documentation" href="#" View Docs
-    
     / It's time to be descriptive
     section.section-1
       .inner
         h1 What is Hugo?
         p.lead
-          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id eros congue, vulputate turpis vitae, varius eros. 
+          | Hugo is an open source component content management system (CCMS). It solves the problem of providing a collaborative environment to author, maintain and publish software documentation for projects using DocBook XML.
         p
-          | Ut faucibus arcu pharetra ipsum blandit, et varius urna feugiat. Vivamus viverra, ipsum in maximus rhoncus, velit urna lobortis lacus, a luctus neque justo eu nibh. Nam vehicula semper interdum. Curabitur consequat libero in hendrerit elementum. Aliquam erat volutpat.
-        p 
-          | Curabitur posuere aliquam tellus, sit amet commodo tellus lacinia in. Vivamus ultrices, sapien quis sollicitudin condimentum, neque nulla varius elit, vel malesuada magna odio consectetur purus. Suspendisse potenti.
-    
+          | Hugo is based on a fork of the PressGang CCMS project, first created by a small team of technical writers inside of Red Hat's former documentation headquarters of sunny Brisbane, Australia. From prototype to production, PressGang came to power the majority of the company's global software documentation.
+        p
+          | Those lessons now fuel the next wave of experimentation, as the team have all moved on to new challenges but maintain an alumni that underpins even this committment to extend the internal learnings into the community. That means Hugo. And that includes you.
     / Describing the tech with some language/service iconography
     section.section-2
       .inner
-        h1 Our Stack
+        h1 Let's build Hugo together
         p.lead
-          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id eros congue, vulputate turpis vitae, varius eros. 
+          | We're just getting started and you're all invited.
         p
-          | Ut faucibus arcu pharetra ipsum blandit, et varius urna feugiat. Vivamus viverra, ipsum in maximus rhoncus, velit urna lobortis lacus, a luctus neque justo eu nibh. Nam vehicula semper interdum. Curabitur consequat libero in hendrerit elementum. Aliquam erat volutpat.
+          | We have just forked the community repos and are building a community team to help manage the project, as well as create the resources required to make additional development as easy as possible. This is a great opportunity to get involved with a team of open source industry veterans as we taking a beginner's mind to the art and opportunity of building something great together.
         p 
-          | Curabitur posuere aliquam tellus, sit amet commodo tellus lacinia in. Vivamus ultrices, sapien quis sollicitudin condimentum, neque nulla varius elit, vel malesuada magna odio consectetur purus. Suspendisse potenti.
-    
+          | The Hugo project is kindly supported by the team at Corilla, a techcomms startup currently based in Paris, France, and includes members of the original PressGang CCMS project. If you would like to get involved, learn more, or support or project, please don't hesitate to get in touch!
     / Final CTA for contributions or to view the Docs
     section.section-cta
       .inner
-        h1 So what are you waiting for?
+        h1 Helping Hugo?
         p.lead 
-          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id eros congue, vulputate turpis vitae, varius eros. 
+          | We're a work in progress, so let's get started. Drop us a line to help, or jump right in and fork that repo.
         .cta
-          a.btn.btn-p1 title="Start Contributing" href="#" Start Contributing
-          a.btn.btn-p2.is-pointing title="View Documentation" href="#" View Docs
-          
+          a.btn.btn-p1 title="Start Contributing" href="#" Send us an email
+          a.btn.btn-p2.is-pointing title="View Documentation" href="#" Hugo on Github
     include partials/_footer
-  
     / Scripts
     script src="/assets/js/particles.min.js"
     script src="/assets/js/app.js"
