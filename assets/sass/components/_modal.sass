@@ -8,6 +8,32 @@
   +transform(translate(-50%, -50%))
   h1
     font-size: 5.2rem
+  p
+    margin-bottom: 3rem
+  .input
+    float: left
+    clear: both
+    width: 100%
+    margin: 0 0 1.5rem 
+  .input-textarea
+    min-width: 100%
+    max-width: 100%
+  .input-submit
+    float: right
+    width: inherit
+.modal-close
+  position: absolute
+  top: 0
+  right: 0
+  width: 4rem
+  height: 4rem
+  border: 0
+  cursor: pointer
+  opacity: 0.5
+  background: url("/assets/svg/i-close.svg") center center no-repeat
+  +transition(opacity 0.1s ease-in-out)
+  &:hover
+    opacity: 1
 #lean_overlay
   position: fixed
   z-index: 100

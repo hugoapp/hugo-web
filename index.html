@@ -3,11 +3,13 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 ga('create', 'UA-65390006-1', 'auto');
-ga('send', 'pageview');</script><div class="modal" id="email-modal"><h1>Send us an email</h1><p>Believe it or not, we're real people out to make documentation awesome. Shoot us an email, whenever.</p><form><input class="input input-email" placeholder="Email Address" type="email"><textarea class="input input-textarea" placeholder="Message"></textarea><input class="btn btn-1" type="submit" value="Send"></form></div><script src="/bower_components/jquery/dist/jquery.min.js"></script><script src="/assets/js/particles.min.js"></script><script src="/assets/js/app.js"></script><script src="/assets/js/skrollr.min.js"></script><script src="/assets/js/skrollr.menu.min.js"></script><script src="/assets/js/jquery.leanModal.min.js"></script><script type="text/javascript">var s = skrollr.init({forceHeight: false});
+ga('send', 'pageview');</script><div class="modal" id="email-modal"><button class="modal-close"></button><h1>Send us an email</h1><p>Believe it or not, we're real people out to make documentation awesome. Shoot us an email, whenever.</p><form><input class="input input-email" id="email-address" placeholder="Email Address" type="email"><textarea class="input input-textarea" cols="4" placeholder="Message" rows="10"></textarea><input class="input input-submit" type="submit" value="Send"></form></div><script src="/bower_components/jquery/dist/jquery.min.js"></script><script src="/assets/js/particles.min.js"></script><script src="/assets/js/app.js"></script><script src="/assets/js/skrollr.min.js"></script><script src="/assets/js/skrollr.menu.min.js"></script><script src="/assets/js/jquery.leanModal.min.js"></script><script type="text/javascript">var s = skrollr.init({forceHeight: false});
 skrollr.menu.init(s, {
   animate: true,
   easing: 'sqrt',
   scale: 2,
   updateUrl: false
 });
-$("#send-email").leanModal();</script></body></html>
+$("#send-email").leanModal({
+  closeButton: ".modal-close"
+});</script></body></html>

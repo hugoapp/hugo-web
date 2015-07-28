@@ -45,13 +45,7 @@ html.no-js lang="en-US"
           a#send-email.btn.btn-p1 title="Start Contributing" href="#email-modal" Send us an email
           a.btn.btn-p2.is-pointing-right title="View Documentation" href="https://github.com/hugoapp" rel="nofollow" target="_blank" Hugo on Github
     include partials/_footer
-    #email-modal.modal
-      h1 Send us an email
-      p Believe it or not, we're real people out to make documentation awesome. Shoot us an email, whenever.
-      form
-        input.input.input-email type="email" placeholder="Email Address"
-        textarea.input.input-textarea placeholder="Message"
-        input.btn.btn-1 type="submit" value="Send"
+    include partials/_modal-email
     / Scripts
     script src="/bower_components/jquery/dist/jquery.min.js"
     script src="/assets/js/particles.min.js"
@@ -67,4 +61,6 @@ html.no-js lang="en-US"
         scale: 2,
         updateUrl: false
       });
-      $("#send-email").leanModal();
+      $("#send-email").leanModal({
+        closeButton: ".modal-close"
+      });

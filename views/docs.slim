@@ -13,10 +13,16 @@ html.no-js lang="en-US"
           | is an open source documentation platform, so let's document our journey together.
         .cta
           a.btn.btn-p1.is-pointing-left title="Start Contributing" href="/" Back
-          a.btn.btn-p2 title="Send us an email" href="#" Send us an email
+          a#send-email.btn.btn-p2 title="Send us an email" href="#email-modal" Send us an email
+    include partials/_modal-email
     / Scripts
+    script src="/bower_components/jquery/dist/jquery.min.js"
     script src="/assets/js/particles.min.js"
     script src="/assets/js/app.js"
     script src="/assets/js/skrollr.min.js"
+    script src="/assets/js/jquery.leanModal.min.js"
     javascript:
       skrollr.init({forceHeight: false});
+      $("#send-email").leanModal({
+        closeButton: ".modal-close"
+      });
