@@ -14,9 +14,9 @@ html.no-js lang="en-US"
           | , an open source documentation platform.
         .cta
           a.btn.btn-p1 title="Start Contributing" href="https://github.com/hugoapp" target="_blank" rel="nofollow" Start Contributing
-          a.btn.btn-p2.is-pointing title="View Documentation" href="/docs" View Docs
+          a.btn.btn-p2.is-pointing title="View Documentation" href="#what" Learn more
     / It's time to be descriptive
-    section.section-1
+    section.section-1#what
       .inner
         h1 What is Hugo?
         p.lead
@@ -49,5 +49,12 @@ html.no-js lang="en-US"
     script src="/assets/js/particles.min.js"
     script src="/assets/js/app.js"
     script src="/assets/js/skrollr.min.js"
+    script src="/assets/js/skrollr.menu.min.js"
     javascript:
-      skrollr.init({forceHeight: false});
+      var s = skrollr.init({forceHeight: false});
+      skrollr.menu.init(s, {
+        animate: true,
+        easing: 'sqrt',
+        scale: 2,
+        updateUrl: true
+      });
