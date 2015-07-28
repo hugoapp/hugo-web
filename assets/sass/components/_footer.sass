@@ -1,37 +1,51 @@
 footer
-  height: 10vh
-  padding: 2rem 0 0
+  padding: 2rem 0
   position: relative
   z-index: 6
   background: #fff
+  overflow: hidden
+  border-top: 2px solid rgba(0, 0, 0, 0.1)
+  @media #{$footer-min}
+    height: 10vh
+    padding: 2rem 0 0
+    border: 0
   ul
-    padding: 0 15rem
+    padding: 0 2rem
     max-width: 130rem
     margin: 0 auto
     position: relative
+    @media #{$footer-min}
+      padding: 0 15rem
     &:before
-      content: ""
-      position: absolute
-      top: -2rem
-      left: 15rem
-      height: 2px
-      width: 40%
-      background: rgba(0, 0, 0, 0.25)
+      @media #{$footer-min}
+        content: ""
+        position: absolute
+        top: -2rem
+        left: 15rem
+        height: 2px
+        width: 40%
+        background: rgba(0, 0, 0, 0.25)
   li
-    float: left
+    display: inline-block
     font-size: 1.6rem
     margin: 0 2rem 0 0
+    @media #{$footer-min}
+      float: left
+      
   a
     color: #000
     &:hover
       text-decoration: underline
   .corilla
-    float: right
     font-size: 1.6rem
-    margin: 0 10rem 0 0
+    margin: 1rem 0 0 2rem
     opacity: 0.5
     color: #7b7b7b
+    display: inline-block
     +transition(all 0.15s ease-in-out)
+    @media #{$footer-min}
+      float: right
+      margin: 0 10rem 0 0
     span
       color: #000
     &:hover
