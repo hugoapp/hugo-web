@@ -7,9 +7,16 @@
   +border-radius(0.5rem)
   +transform(translate(-50%, -50%))
   h1
-    font-size: 5.2rem
+    font-size: 2.8rem
+    margin-bottom: 1rem
+    @media #{$modal-min}
+      font-size: 5.2rem
+      margin-bottom: 0
   p
-    margin-bottom: 3rem
+    padding-right: 5rem
+    @media #{$modal-min}
+      margin-bottom: 3rem
+      padding-right: 0
   .input
     float: left
     clear: both
