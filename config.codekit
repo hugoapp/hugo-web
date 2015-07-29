@@ -31,6 +31,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/img\/ben-sm.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 59096,
+		"inputAbbreviatedPath": "\/assets\/img\/ben-sm.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/ben-sm.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/david-sm.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 59064,
+		"inputAbbreviatedPath": "\/assets\/img\/david-sm.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/david-sm.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/facebook-share-150721.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

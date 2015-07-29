@@ -43,6 +43,20 @@
     opacity: 1
   svg
     fill: #020202
+.modal-profiles
+  display: none
+  @media #{$modal-min}
+    display: block
+    margin: 1rem 1rem 0 0
+    float: left
+    a
+      float: left
+      width: 6rem
+      margin: 0 1rem 0 0
+    img
+      width: 100%
+      height: auto
+      +border-radius(3rem)
 #lean_overlay
   position: fixed
   z-index: 100
