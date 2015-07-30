@@ -3,6 +3,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f  
 RewriteRule ^(.*)$ $1.html
 
+## Below is for staging ONLY ##
 AuthName "Restricted Area" 
 AuthType Basic 
 AuthUserFile /var/www/.htpasswd 
