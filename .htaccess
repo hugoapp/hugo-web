@@ -3,6 +3,11 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f  
 RewriteRule ^(.*)$ $1.html
 
+## Below is for production ONLY ##
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
 ## Below is for staging ONLY ##
 AuthName "Restricted Area" 
 AuthType Basic 
